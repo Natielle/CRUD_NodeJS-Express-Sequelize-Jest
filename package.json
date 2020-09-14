@@ -1,0 +1,28 @@
+{
+  "name": "CRUD_NodeJS",
+  "version": "1.0.0",
+  "description": "CRUD usando NodeJS, Express, Sequelize e Jest",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --runInBand"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "pg": "^8.3.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.4.2",
+    "superagent": "^6.1.0",
+    "supertest": "^4.0.2"
+  }
+}

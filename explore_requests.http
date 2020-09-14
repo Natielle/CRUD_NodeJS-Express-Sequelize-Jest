@@ -1,0 +1,37 @@
+GET http://localhost:3001/ 
+
+### Consultando todos os usuarios
+GET http://localhost:3001/users
+
+### Consultando usuarios com base no titulo
+GET http://localhost:3001/users/teste
+
+### Criando um usuario
+POST http://localhost:3001/users
+content-type: application/json
+
+{
+    "title": "Teste de insercao 2",
+    "amount": "33",
+    "published": "TRUE",
+    "createdAt": "2020-09-10T03:00:00.000Z",
+    "updatedAt": "2020-09-10T03:00:00.000Z"
+}
+
+
+### Alterando um usuario
+PUT http://localhost:3001/users/1
+content-type: application/json
+
+{
+    "title": "Teste de insercao alterado 2",
+    "amount": "343",
+    "published": "TRUE",
+    "createdAt": "2020-09-10T03:00:00.000Z",
+    "updatedAt": "2020-09-10T03:00:00.000Z"
+}
+
+
+### Deletando um usuario
+DELETE http://localhost:3001/users/2
+content-type: application/json
